@@ -17,7 +17,7 @@ Designed to consume the API of [express-bull](https://github.com/keyvanfatehi/ex
 
 ### Markup
 
-```
+```html
 <div class='jobs' data-category='wait'></div>
 <div class='jobs' data-category='active'></div>
 <div class='jobs' data-category='failed'></div>
@@ -40,7 +40,7 @@ $(function(){
     var category = $(el).data('category')
     var jobs = new ReactBull.JobsController(category, {
       resourcePath: '/api/v1/jobs',
-      poll: 5000
+      poll: 5000 // optional
     });
     jobs.mountInterface(el);
   })
