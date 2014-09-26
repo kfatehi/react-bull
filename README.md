@@ -22,6 +22,7 @@ Designed to consume the API of [express-bull](https://github.com/keyvanfatehi/ex
 <div class='jobs' data-category='active'></div>
 <div class='jobs' data-category='failed'></div>
 <div class='jobs' data-category='complete'></div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/react/0.11.2/react.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="/vendor/jquery.noty.js"></script>
 <script src="/vendor/jquery.blockUI.js"></script>
@@ -32,7 +33,7 @@ Designed to consume the API of [express-bull](https://github.com/keyvanfatehi/ex
 ### Script
 
 ```js
-var ReactBull = require('react-bull')
+var ReactBull = require('react-bull')(React)
 
 $(function(){
   $('.jobs[data-category]').each(function(i, el) {
