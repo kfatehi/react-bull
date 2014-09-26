@@ -1,0 +1,25 @@
+{
+  "name": "react-bull",
+  "version": "1.0.0",
+  "description": "React components & frontend code for bull job queue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keyvanfatehi/react-bull.git"
+  },
+  "keywords": [
+    "bull"
+  ],
+  "author": "Keyvan Fatehi <keyvanfatehi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyvanfatehi/react-bull/issues"
+  },
+  "homepage": "https://github.com/keyvanfatehi/react-bull",
+  "browserify": {
+    "transform": [ "reactify" ]
+  }
+}
