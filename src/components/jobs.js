@@ -42,6 +42,9 @@ module.exports = function(React) {
         </div>
       )
     },
+    deleteAll: function() {
+      this.props.controller.redisHandler.fn.deleteByStatus(this.props.category)
+    },
     componentWillMount: function() {
       this.props.controller.fetch()
     }
