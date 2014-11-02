@@ -21,11 +21,18 @@ module.exports = function(React) {
           handler={this.props.controller.redisHandler}
         />)
       }.bind(this));
+      var deleteAllButton = ( rows.length ?
+                             <button onClick={this.deleteAll}>
+                               Delete all
+                             </button> : '' )
       return (
         <div>
-          <h2>{this.props.category}</h2>
           <table className='table'>
             <thead>
+              <tr>
+                <td>{this.props.category} jobs</td>
+                <td>{deleteAllButton}</td>
+              </tr>
               {head}
             </thead>
             <tbody>
